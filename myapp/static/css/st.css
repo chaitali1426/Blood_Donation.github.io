@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+/* address */
+.address {
+    height: 200px;
+  }
+  
+  #page-header {
+    background: url(../imge/a.jpg);
+    background-size: cover;
+    height: 300px;
+    padding-top: 50px;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+  }
+  
+  #page-header_1 {
+    background: url(../imge/a.jpg);
+    background-size: cover;
+    height: 300px;
+    padding-top: 50px;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+  }
+  
+  /* Registration */
+  .form_body {
+    width: 100%;
+   
+    margin-left:220px;
+    width:50%;
+    margin-bottom:0;
+   
+
+    
+  }
+  
+  .blood_group {
+    margin-left: 286px;
+  }
+  
+  .email_group {
+    margin-left: 268px;
+  }
+  
+  .reg_btn {
+    background-color:#111;
+    color: white;
+    margin-top:10;
+    margin-left:220;
+  }
+  
+  /* search */
+  .search {
+    width: 50%;
+    height: 600px;
+    /*margin-left: 200px;*/
+    margin-left:-30px;
+    
+  }
+  
+  .search img {
+    margin-left: 139px;
+  }
+  
+  .search_bt {
+    background-color: greenyellow;
+    color: white;
+    margin-left:200px;
+
+  }
+  
+  
+  
+  .donor_details {
+    width: 550px;
+    padding: 20px;
+ 
+  }
+  
+  .theadcolor {
+    background-color: #FF0000;
+  }
+  
+  .donor_list {
+    height: 600px;
+  }
+  
+  .Contact_body {
+    height: 600px;
+  }
+  
+  .about_page {
+    height: 600px;
+  }
+
+
+#footer{
+  background:#A9130B;
+  color:white;
+}
+
+h4{
+  margin-left:300px;
+  margin-top:100px;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+img{
+  width:800px;
+  height:400px;
+  margin:100px;
+
+}
+
+p{
+  margin:20;
+
+  text-align:left;
+  font-family: 'Noto Sans', sans-serif;
+  
+}

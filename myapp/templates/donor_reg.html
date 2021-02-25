@@ -1,0 +1,25 @@
+{%load static%}
+<link rel='stylesheet' href="{%static 'css/bootstrap.css'%}">
+<link rel='stylesheet' href="{%static 'css/bootstrap.min.css'%}">
+<link rel='stylesheet' href="{%static 'css/st.css'%}">
+<link rel='stylesheet' href="{%static 'css/style.css'%}">
+{%include 'navbar.html'%}
+
+
+
+
+
+<div class="container-fluid">
+        <div class="form_body" style=''>
+            <h2 class="text-center font-" style='margin-top:20; background:#A9130B;color:white'>Blood Donor Registration Form</h2>
+            <form action="{% url 'dregdisplay' %}" method="post">
+
+            <!--All that's left is the {{ form }} template variable, which we passed to the template in the context dictionary.-->
+                {% csrf_token %}
+                {{forms.as_table}}
+                <button type="submit" class="btn reg_btn">Submit</button>
+            </form>
+        </div>
+    </div>
+  
+{%include 'footer.html'%}

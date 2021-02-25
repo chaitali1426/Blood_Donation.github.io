@@ -1,0 +1,29 @@
+{%load static%}
+<link rel='stylesheet' href="{%static 'css/bootstrap.css'%}">
+<link rel='stylesheet' href="{%static 'css/bootstrap.min.css'%}">
+<link rel='stylesheet' href="{%static 'css/st.css'%}">
+
+{%include 'navbar.html'%}
+
+
+{% block content %}
+    <!-- Search -->
+    <div class="search">
+    <h4 style=''> Looking for the blood near by you?</h4>
+      <form action="{% url 'donorlistsite' %}" method="POST">
+          {% csrf_token %}
+          
+          <div class="input-group" style='margin-left:450px;'>
+          
+            {{forms_search.select_blood_group}}
+            {{forms_search.select_location}}
+          </div>
+        <button type="submit" class="btn search_bt" style='margin-left:300px;margin-top:30px;background:green' >Search</button>
+
+      </form>
+    </div>
+
+
+ {% endblock %}
+
+ {%include 'footer.html'%}
